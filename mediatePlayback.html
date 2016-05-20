@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <script src="soap-proxy.js"></script>
+  <script src="main.js"></script>
+  <title>云法院.移动调解-登录</title>
+  <style type="text/css" media="screen">
+    * {
+      margin:0;
+      padding:0;
+      font-family: "Helvetica Neue",Helvetica,sans-serif;
+      box-sizing: border-box;
+    }
+    body,html {
+      width: 100%;
+      height: 100%;
+      font-size: 14px;
+      background: #f1f1f1;
+      overflow: hidden;
+    }
+    .top-nav{
+      margin:0;
+      background: #434A54;
+      background-image:linear-gradient(90deg, #5DB4AE 0%, #5CB5D8 100%);
+      height: 40px;
+    }
+    .top-nav>#nav-title{
+      padding:0;
+      margin:0;
+      color:white;
+      line-height: 40px;
+    }
+    .wrapper {
+      padding: 0;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
+    }
+    .wrapper>.left-wrapper {
+      position: relative;
+      width: 70%;
+      height: 100%;
+      background: #131313;
+      float: left;
+      
+    }
+    .wrapper>.left-wrapper> embed {
+      width: 100%;
+      height: 100%;
+    }
+    .wrapper>.right-wrapper {
+      margin-left: 70%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      background: #f1f1f1;
+    }
+    .card {
+      width: 100%;
+      padding: 15px;
+      background: white;
+      border-bottom: 1px solid #ddd;
+    }
+    .card-link {
+      padding: 0;
+    }
+    .card > a ,.card > a:hover{
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 15px;
+      text-decoration: none;
+    }
+    .card > a:hover {
+      background: #B3E5FC;
+    }
+    .nav-tabs.nav-justified>.active>a, .nav-tabs.nav-justified>.active>a:focus, .nav-tabs.nav-justified>.active>a:hover{
+      border:none;
+      border-radius: 0;
+    }
+    .info-pane {
+      position: absolute;
+      top:40px;
+      left:0;
+      right:0;
+      bottom:0;
+      overflow: scroll;
+    }
+    .note-pane {
+      padding: 10px 15px;
+      position: absolute;
+      top:40px;
+      left:0;
+      right:0;
+      bottom:0;
+      background: white;
+    }
+    .note-pane>textarea{
+      width: 100%;
+      height: 100%;
+      border: 1px solid #ddd;
+      padding: 10px 15px;
+    }
+    .btn-fixed {
+      position: absolute;
+      top:5px;
+      right:15px;
+      z-index: 1;
+    }
+    .title-label {
+      display: block;
+      width: 100px;
+      margin: 5px 15px;
+      font-weight: bold;
+    }
+    @media (max-width: 768px){
+      .wrapper>.right-wrapper {
+        display: none;
+        margin:0;
+      }
+      .wrapper>.left-wrapper {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid top-nav">
+    <h4 id="nav-title">EXPRESSCOURT</h4>
+  </div>
+  <div class="container-fluid wrapper">
+    <div class="left-wrapper">
+      <a href="#" class="btn btn-info btn-fixed" title="stop">结束调解</a>
+      <embed src="http://player.youku.com/player.php/sid/XMTU1ODU5MTkwNA==/v.swf" allowFullScreen="true" quality="high" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+    </div>
+    <div class="right-wrapper">
+      <div>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs nav-justified" role="tablist">
+          <li role="presentation" class="active"><a href="#home" class="tab-links" aria-controls="home" role="tab" data-toggle="tab">调解信息</a></li>
+          <li role="presentation"><a href="#profile" class="tab-links" aria-controls="profile" role="tab" data-toggle="tab">调解笔录</a></li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane info-pane active" id="home">
+            <div class="card">
+              <small>案号</small>
+              <strong class="pull-right">（2016）沪0111民初1号</strong>
+            </div>
+            <div class="card">
+              <small>原告</small>
+              <strong class="pull-right">张三</strong>
+            </div>
+            <div class="card">
+              <small>被告</small>
+              <strong class="pull-right">李四</strong>
+            </div>
+            <small class="title-label text-muted">相关证据</small>
+            <div class="card card-link">
+              <a href="#" title="">证据</a>
+            </div>
+            <div class="card card-link">
+              <a href="#" title="">证据</a>
+            </div>
+            <div class="card card-link">
+              <a href="#" title="">证据</a>
+            </div>
+            <div class="card card-link">
+              <a href="#" title="">证据</a>
+            </div>
+            <div class="card card-link">
+              <a href="#" title="">证据</a>
+            </div>
+            <div class="card card-link">
+              <a href="#" title="">证据</a>
+            </div>
+            <div class="card card-link">
+              <a href="#" title="">证据</a>
+            </div>
+            <div class="card card-link">
+              <a href="#" title="">证据</a>
+            </div>
+            <div class="card card-link">
+              <a href="#" title="">证据</a>
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane note-pane" id="profile">
+            <textarea name="note"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
